@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://saemali.github.io/biodata/sitemap.xml
