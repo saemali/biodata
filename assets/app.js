@@ -37,7 +37,7 @@ function render(){const{d,v,out}=sections();sheet.className='t-'+v.theme;sheet.l
  if(photo&&$('#photoOn').checked)h+=`<img class="photo" src="${photo}" alt="Photo of ${esc(d.name||'candidate')}">`;
  h+=`<h2>${esc(d.name||'Your name')}</h2><p class="sub">${esc(title)}</p>`;
  out.forEach(([t,rows])=>{h+=`<h3>${esc(t)}</h3><table>`+rows.map(([l,val])=>l?`<tr><td>${esc(l)}</td><td>${esc(val)}</td></tr>`:`<tr><td colspan="2" style="width:auto;color:#222">${esc(val)}</td></tr>`).join('')+'</table>'});
- h+='<p class="foot">Made free at saemali.github.io/biodata · Get it written for you from ₹299</p>';sheet.innerHTML=h}
+ h+='<div class="clear"></div><p class="foot">Made free at saemali.github.io/biodata · Get it written for you from ₹299</p>';sheet.innerHTML=h}
 const libs={};function load(src){return libs[src]||(libs[src]=new Promise((ok,no)=>{const s=document.createElement('script');s.src=src;s.onload=ok;s.onerror=()=>no(new Error('load '+src));document.head.appendChild(s)}))}
 const base=document.querySelector('script[src$="app.js"]').src.replace(/app\.js.*$/,'');
 async function canvas(scale){await load(base+'vendor/html2canvas.min.js');return html2canvas(sheet,{scale,backgroundColor:'#fff',useCORS:true,windowWidth:900})}

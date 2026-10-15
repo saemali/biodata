@@ -18,7 +18,7 @@ input,select,textarea{width:100%;font:inherit;padding:.6rem;border:1px solid #8a
 textarea{min-height:90px}.chk{display:flex;gap:.5rem;align-items:center;font-weight:400}.chk input{width:auto;min-height:auto}
 fieldset{border:1px solid var(--line);border-radius:8px;margin:.8rem 0}
 .prevwrap{overflow:auto;background:#ddd;padding:8px;border-radius:8px}
-#sheet{width:794px;min-height:1123px;margin:0 auto;background:#fff;padding:48px 56px 72px;position:relative;font-family:Georgia,"Noto Serif","Noto Serif Devanagari",serif;color:#222}
+#sheet{width:794px;min-height:1123px;margin:0 auto;background:#fff;padding:48px 56px 56px;position:relative;font-family:Georgia,"Noto Serif","Noto Serif Devanagari",serif;color:#222;overflow:hidden}
 #sheet .frame{position:absolute;inset:18px;border:3px double var(--tp);pointer-events:none}
 #sheet .inv{text-align:center;color:var(--tp);font-size:20px;margin:0 0 8px}
 #sheet h2{text-align:center;color:var(--tp);font-size:30px;margin:4px 0 2px}
@@ -26,7 +26,7 @@ fieldset{border:1px solid var(--line);border-radius:8px;margin:.8rem 0}
 #sheet h3{color:var(--tp);border-bottom:1px solid var(--ta);font-size:17px;margin:16px 0 6px;letter-spacing:.04em;text-transform:uppercase}
 #sheet table{width:100%;border-collapse:collapse;font-size:15px}#sheet td{padding:3px 6px;vertical-align:top}#sheet td:first-child{width:38%;color:#555}
 #sheet .photo{float:right;width:130px;height:160px;object-fit:cover;border:2px solid var(--ta);margin:0 0 8px 12px}
-#sheet .foot{position:static;margin-top:24px;text-align:center;font-size:11px;color:#666}
+#sheet .clear{clear:both;height:0;overflow:hidden}#sheet .foot{position:static;clear:both;display:block;margin:28px 0 0;padding-top:10px;border-top:1px solid #e5ddd2;text-align:center;font-size:11px;color:#666;line-height:1.4}
 .t-maroon{--tp:#7a1f2b;--ta:#b8860b}.t-paithani{--tp:#5b1e6e;--ta:#2e7d6b}.t-bandhani{--tp:#a3410f;--ta:#2f6b2f}.t-kolam{--tp:#8b1d1d;--ta:#c28a00}
 .t-emerald{--tp:#0f5c46;--ta:#9a7b2f}.t-navy{--tp:#1d2f5e;--ta:#c66a00}.t-grace{--tp:#1d3557;--ta:#6b8e23}.t-saffron{--tp:#9a4a00;--ta:#7a5c00}.t-minimal{--tp:#222;--ta:#0e7490}
 footer{border-top:1px solid var(--line);padding:1rem;text-align:center;color:var(--mut);font-size:.9rem;margin-top:2rem}
